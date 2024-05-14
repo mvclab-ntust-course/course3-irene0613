@@ -20,8 +20,23 @@
   ```  
   git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git  
   ```  
-* 安裝若是沒有問題，點擊`"stable-diffusion-webui\webui-user.bat"`
-* 若是出現`AssertionError: Torch is not able to use GPU; add --skip-torch-cuda-test to COMMANDLINE_ARGS variable to disable this check`相關問題，請右鍵點擊webui-user.bat開啟記事本編輯，並在`set COMMANDLINE_ARGS=`後加入這一句話
+* 下載若是沒有問題，點擊`stable-diffusion-webui\webui-user.bat`  
+* 若是出現`AssertionError: Torch is not able to use GPU; add --skip-torch-cuda-test to COMMANDLINE_ARGS variable to disable this check`相關問題，請右鍵點擊webui-user.bat開啟記事本編輯，並在`set COMMANDLINE_ARGS=`後加入這一句話  
   ```  
   set COMMANDLINE_ARGS= --lowvram --precision full --no-half --skip-torch-cuda-test  
   ```  
+* 第一次開啟需要跑一些東西，完成之後會自動跑出`http://127.0.0.1:7860`的視窗  
+* 將我們訓練的模型放入到`stable-diffusion-webui\models\Lora`的資料夾中，並且重整視窗，在左邊中間選項LoRA就可以選擇我們的模型  
+* 嘗試使用不同prompt產生擁有阿甘妙世界風格的圖片！  
+  <img src="https://github.com/mvclab-ntust-course/course3-irene0613/blob/main/image/1.png" width="500px"><br>
+  <img src="https://github.com/mvclab-ntust-course/course3-irene0613/blob/main/image/2.png" width="500px"><br>
+  <img src="https://github.com/mvclab-ntust-course/course3-irene0613/blob/main/image/3.png" width="500px"><br>
+  
+## System Information  
+* Operating System: Windows 11 家用版 64-bit  
+* Processor: Intel(R) Core(TM) i5-8265U CPU @ 1.60GHz (8 CPUs), ~1.8GHz  
+* Memory: 8192MB RAM  
+* Available OS Memory: 7938MB RAM  
+  
+## 結論  
+由於電腦硬體不好，導致有些程式碼或訓練會跑不了，建議可以將task分成幾份，分別查查看有沒有網路資源可以線上操作的，之後再作合併。另外Colab在2023年9月有更改規定，導致一些網路上的開源程式碼無法執行(要使用的話需要購買Colab Pro)，因此需要多花費一些時間在搜尋可以線上使用的程式。  
