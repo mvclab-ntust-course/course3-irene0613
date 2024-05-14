@@ -21,7 +21,7 @@
   git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git  
   ```  
 * 下載若是沒有問題，點擊`stable-diffusion-webui\webui-user.bat`  
-* 若是出現`AssertionError: Torch is not able to use GPU; add --skip-torch-cuda-test to COMMANDLINE_ARGS variable to disable this check`相關問題，請右鍵點擊webui-user.bat開啟記事本編輯，並在`set COMMANDLINE_ARGS=`後加入這一句話  
+* 若是出現`AssertionError: Torch is not able to use GPU; add --skip-torch-cuda-test to COMMANDLINE_ARGS variable to disable this check`相關問題，請右鍵點擊webui-user.bat開啟記事本編輯，並將`set COMMANDLINE_ARGS=`改成  
   ```  
   set COMMANDLINE_ARGS= --lowvram --precision full --no-half --skip-torch-cuda-test  
   ```  
