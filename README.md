@@ -10,7 +10,7 @@
 * 執行[Dataset Maker](https://colab.research.google.com/github/hollowstrawberry/kohya-colab/blob/main/Dataset_Maker.ipynb)的第一步驟(連接資料夾到剛剛創建的dataset)與第四步驟(生成提示詞)  
   
 ## LoRA訓練  
-* 根據[Lora Trainer](https://colab.research.google.com/drive/1DOXzROm1Sz-rcwgdOoCCX3UdrEbIippX#scrollTo=rmCPmqFL6hCQ)給的空格填入需求，相關參數在`report.pdf`中  
+* 根據[Lora Trainer](https://colab.research.google.com/github/hollowstrawberry/kohya-colab/blob/main/Lora_Trainer.ipynb)給的空格填入需求，相關參數在`report.pdf`中  
 * 若是要用wandb監測數據的話，需要在載入相關資料後找到`train_network.py`與`train_network_wrapper.py`兩個檔並加入相關程式碼(如提供之檔案所示)  
 * 訓練結束後會產生`animate-20.safetensors`檔，其路徑在`Loras - animate(自己創一個這的專案的名稱) - output`  
   
